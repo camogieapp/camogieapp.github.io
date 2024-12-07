@@ -1,0 +1,48 @@
+/* Blog home page by Tiphaine Pontdeme */
+
+.listing{
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap:wrap;
+	background-color:white;
+	margin:auto;
+	width:90%;
+	padding:5px;
+	text-align: justify;
+}
+
+#intro {
+	text-align: justify;
+	padding: 0 60px;
+}
+
+.listing img{
+	float:right;
+	padding-left: 8px;
+}
+
+.post{
+	width:95%;
+	margin-bottom:45px;
+}
+
+.post-title{
+	font-size: 20px;
+}
+
+#new {
+	border: 2px solid green;
+	border-radius: 25px;
+	padding: 10px;
+	background-color:silver;
+}
+
+/* Devices smaller than a tablet */
+@media only screen and (max-width:600px){
+.main img{
+	float:none;
+	display:block;
+	margin: 5px auto;
+}
+	
+}

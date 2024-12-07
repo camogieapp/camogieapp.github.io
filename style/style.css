@@ -1,0 +1,168 @@
+/* Template stylesheet by Tiphaine Pontdeme */
+
+body{
+	/*created with Background Image Generator - bg.siteorigin.com*/	
+	background-image:url(../images/background.png);
+	font-family: Helvetica;
+	/*Optional colors taken from w3schools https://www.w3schools.com/colors/colors_names.asp*/
+	/*color:#4682B4;*/
+	/*color:#191970;*/
+}
+
+.container{
+	width: 90%;
+	margin:auto;
+}
+
+/* Image taken from https://camogie.ie/ */
+.logo{
+	content:url(../images/camogie-logo.svg);
+	display:block;
+	margin:10px auto;
+	width:100px;
+}
+
+.nav{
+	background-color:rgb(16,81,142);
+	border-radius:25px;
+	padding:10px;
+	margin-bottom:15px;
+	/*W3 Schools, How TO - Responsive Top Navigation, https://www.w3schools.com/howto/howto_js_topnav_responsive.asp, accessed on 12.11.2024*/
+	overflow:hidden;
+}
+
+.nav a{
+	/*W3 Schools, How TO - Responsive Top Navigation, https://www.w3schools.com/howto/howto_js_topnav_responsive.asp, accessed on 12.11.2024*/
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	/* end of pasted code */
+	font-weight:bold;
+	color:silver;
+	text-decoration:none;
+}
+
+.nav a:hover{
+	font-size:110%;
+}
+
+/*W3 Schools, How TO - Responsive Top Navigation, https://www.w3schools.com/howto/howto_js_topnav_responsive.asp, accessed on 12.11.2024*/
+.nav a.active{
+	color:white;
+}
+
+/*W3 Schools, How TO - Responsive Top Navigation, https://www.w3schools.com/howto/howto_js_topnav_responsive.asp, accessed on 12.11.2024*/
+.nav .icon {
+  display: none;
+}
+
+.main{
+	min-height:100px;
+	border-radius:25px;
+	background-color:white;
+	margin-bottom:15px;
+	padding:10px;
+}
+
+h1{
+	text-align:center;
+}
+
+.footer{
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap:wrap;
+	background-color:rgb(16,81,142);
+	color: silver;
+	min-height:110px;
+	border-radius:25px;
+	padding:15px 15px 0 15px;
+}
+
+.social{
+	font-weight:bold;
+	float:left;
+	width:75%;
+}
+
+.newsletter{
+	font-weight:bold;
+	float:right;
+	width:25%;
+}
+
+.error{
+	color: red;
+    font-size: 0.9em;
+}
+
+.copyright{
+	float:left;
+	text-align:center;
+	width:100%;
+}
+
+/* Devices smaller than a tablet */
+@media only screen and (max-width:600px){
+	/*W3 Schools, How TO - Responsive Top Navigation, https://www.w3schools.com/howto/howto_js_topnav_responsive.asp, accessed on 12.11.2024*/
+	.nav a:not(:first-child){
+		display: none;
+	}
+	.nav a.icon{
+		float: right;
+		display: block;
+	}
+	
+	.nav.responsive{
+		position: relative;
+	}
+	.nav.responsive a.icon{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.nav.responsive a{
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	/*end of pasted code */
+	
+	.social{
+		font-weight:bold;
+		float:left;
+		width:100%;
+	}
+
+	.newsletter{
+		font-weight:bold;
+		float:left;
+		width:100%;
+	}
+
+	.copyright{
+		float:left;
+		text-align:center;
+		width:100%;
+	}
+}
+
+/*Font picked by Michael*/
+.agdasima-regular {
+	color: d4af37;
+	font-family: "Agdasima", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+}
+
+.agdasima-bold {
+	font-family: "Agdasima", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	color: grey;
+	font-size: 36px;
+	text-shadow: 5px 5px 7px brown;
+	float:center;	
+}

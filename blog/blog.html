@@ -1,0 +1,95 @@
+<!-- Blog home page by Tiphaine Pontdeme -->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Camogie App Blog</title>
+		<link rel="stylesheet" href="../style/style.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- W3 Schools, How TO - Responsive Top Navigation, https://www.w3schools.com/howto/howto_js_topnav_responsive.asp, accessed on 12.11.2024 -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- CSS file for this page only -->
+		<link rel="stylesheet" href="../style/blog.css"/>
+		<link rel="icon" type="image/png" href="../images/Tab.png"> <!-- Logo for tab by M v Flood -->
+		<!-- Font picked by Michael -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">						
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+		
+	<body>
+		<div class="container">
+			<!-- Header with logo and nav links -->
+			<div class="logo">
+				<p></p>	
+			</div>
+			<!-- W3 Schools, How TO - Responsive Top Navigation, https://www.w3schools.com/howto/howto_js_topnav_responsive.asp, accessed on 12.11.2024 
+			NOTE: The active class needs to be added to the current page. -->
+			<div class="nav" id="myNav">
+				<a href="../index.html">Home</a>
+				<a href="../features/features.html">Features</a>
+				<a href="../sign-up/sign-up.html">Sign Up</a>
+				<a href="blog.html" class="active">Blog</a>
+				<a href="carousel.html">All Stars</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+			
+			<!-- Main content -->
+			<div class="main">
+				<h1 class="agdasima-bold">Camogie App Blog</h1>
+				<p class="agdasima-regular" id="intro">Explore our blog to learn more about Camogie and for exclusive news about our app.</p>
+				<div class="listing">
+					<div class="post" id="new">
+					<h2 class="post-title">NEW - Camogie Senior All Stars 2024</h2>
+					<!-- Image taken from Camogie.ie -->
+					<img src="../images/all-stars-trophee.jpg" alt="All Stars trophees close up">
+					<!-- Text from Wikipedia, Camogie All Stars Awards, https://en.wikipedia.org/wiki/Camogie_All_Stars_Awards -->
+					<p class="agdasima-regular">The results are out! The Camogie All Star Awards are awarded each November to 15 players who have made outstanding contributions to the Irish stick and ball team sport of camogie in the 15 traditional positions on the field: goalkeeper, three full backs, three half-backs, two midfields, three half-forwards and three full-forwards.</p>
+					<a href="carousel.html">Read more...</a>
+					</div>
+					<div class="post">
+					<h2 class="post-title">Camogie Rules Cheat Sheet</h2>
+					<!-- Skillfinery, Camogie Rules: A Beginner’s Guide, https://www.skillfinery.com/sport-rules/a-beginners-guide-camogie-rules/ -->
+					<img src="../images/camogie-shot.png" alt="Camogie players on the field">
+					<p class="agdasima-regular">Do you need a refesher on how to play Camogie? This blog post was written for you! The game itself unfolds in two halves, each lasting 30 minutes, with a 15-minute halftime intermission. Let's review the various fouls and scoring methods.</p>
+					<a href="">Read more...</a>
+					</div>
+					<div class="post">
+					<h2 class="post-title">Camogie vs Hurling: what's the difference?</h2>
+					<!-- Shannon Academy of English, The differences between Hurling and Camogie, https://www.shannonacademy.com/the-differences-between-hurling-and-camogie/ -->
+					<img src="../images/camogie-game.jpg" alt="Players wearing red and black jerseys">
+					<p class="agdasima-regular">Hurling and Camogie are both hugely popular sports in Ireland and are followed by many people across the country. Men play hurling and women play Camogie. While they are similar, different rules apply.</p>
+					<a href="">Read more...</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Footer with copyright, social media links and newletter subscription -->
+			<div class="footer">
+				<div class="social">
+					<p>Connect with us</p>
+					<p><a href=""><img src="../images/facebook-black.svg" alt="Facebook logo in black" width="20px" height="20px"></a> <a href=""><img src="../images/twitter-x-black.svg" alt="X logo in black" width="20px" height="20px"></a> <a href=""><img src="../images/youtube-black.svg" alt="YouTube logo in black" width="20px" height="20px"></a></p>
+				</div>
+				
+				<div class="newsletter">		
+					<p>Subscribe to our newsletter</p>
+					<form id="newsletter">
+						<input type="email" id="email" name="email" placeholder="Enter your email address"/>
+						<span id="emailError" class="error"></span>
+						<button type="submit">Subscribe</button>
+					</form>
+					
+				</div>
+				<div class="copyright">
+					<p>&copy;2024 Camogie App. All rights reserved.</p>
+				</div>
+			</div>
+			
+		</div>
+		<!-- For the navigation bar -->
+		<script src="../script/responsive.js"></script>
+		<!-- For email validation -->
+		<script src="../script/newsletter.js"></script>
+	</body>
+</html>

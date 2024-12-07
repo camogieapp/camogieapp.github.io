@@ -1,0 +1,78 @@
+<!-- The Project
+Michael V Flood
+National College of Ireland 
+November 2024
+-->
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Home</title>
+			<link rel="stylesheet" href="style/style.css"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!-- W3 Schools, How TO - Responsive Top Navigation, https://www.w3schools.com/howto/howto_js_topnav_responsive.asp, accessed on 12.11.2024 -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="icon" type="image/png" href="images/Tab.png"> <!-- Logo for tab by M v Flood -->
+			<!-- Font picked by Michael V Flood -->
+			<link rel="preconnect" href="https://fonts.googleapis.com">						
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+		
+	<body>
+		<div class="container">
+			<!-- Header with logo and nav links -->
+			<div class="logo">
+				<p></p>	
+			</div>
+			<!-- W3 Schools, How TO - Responsive Top Navigation, https://www.w3schools.com/howto/howto_js_topnav_responsive.asp, accessed on 12.11.2024 
+			NOTE: The active class needs to be added to the current page. -->
+				<div class="nav" id="myNav">
+					<a href="index.html" class="active">Home</a>
+					<a href="features/features.html">Features</a>
+					<a href="sign-up/sign-up.html">Sign Up</a>
+					<a href="blog/blog.html">Blog</a>
+					<a href="blog/carousel.html">All Stars</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
+				</div>	
+			
+			
+					<!-- Main content -->
+					<div class="main">
+						<h1 class="agdasima-bold">Camogie All Stars</h1>
+							<p class="agdasima-regular" style="text-align:justify;">Camógie is a fast paced stick and ball game. Similar to Hurling, Camógie is the female version of the Sport. Although there are similarities Camógie is not administered the GAA. Camógie has its own separate administration. Camóg is the name of the short stick used in the Sport. Later the word Camóg was Anglicised to Camógie giving the Sport its current name. Using a small ball called the Sliotar players have to pass within four steps of movement. Passing can be via the stick or foot and by open hand slapping. Camógie was founded in 1903 by Máire Ní Chinnéide and Cáit Ní Dhonnchadha. By 1932 the first 10 county All Ireland took place. Outside of the All Ireland Championships players hone their skills in the National Leagues. Camógie has become a global sport now played on every Continent.  Every year the top 15 players are awarded <a href="blog/carousel.html">All Star</a> status. <!-- By M V Flood https://www.redclick.ie/content-hub/everything-wanted-know-camogie -->
+							</p>
+								<p>&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<img src="images/attire1.jpg" style="width:20%" alt="Earliest attire"><img src="images/attire2.jpg" style="width:20%" alt="1930's attire"> <img src="images/attire3.jpg" style="width:20%" alt="1950's attire"> <img src="images/attire.jpg" style="width:20%" alt="1960's attire"></p> <!-- Images by M V Flood taken from https://www.rte.ie/brainstorm/2024/0808/1331703-camogie-kit-uniforms-history-fashion/  -->
+								<p> <a>&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;Earliest attire&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  1930's attire&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp;1950's attire&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 1960's attire</a></p>
+					</div>
+			
+						<!-- Footer with copyright, social media links and newletter subscription -->
+						<div class="footer">
+							<div class="social">
+								<p>Connect with us</p>
+								<!-- Images taken from https://www.paloaltonetworks.com/ -->
+								<p><a href=""><img src="images/facebook-black.svg" alt="Facebook logo in black" width="20px" height="20px"></a> <a href=""><img src="images/twitter-x-black.svg" alt="X logo in black" width="20px" height="20px"></a> <a href=""><img src="images/youtube-black.svg" alt="YouTube logo in black" width="20px" height="20px"></a></p>
+							</div>
+										<div class="newsletter">				
+								<p>Subscribe to our newsletter</p>
+								<form id="newsletter">
+									<input type="email" id="email" name="email" placeholder="Enter your email address"/>
+									<span id="emailError" class="error"></span>
+									<button type="submit">Subscribe</button>
+								</form>
+								
+									</div>
+										<div class="copyright">
+											<p>&copy;2024 Camogie App. All rights reserved.</p>
+										</div>
+									</div>
+			
+		</div>
+		<!-- For the navigation bar -->
+		<script src="script/responsive.js"></script>
+		<!-- For email validation -->
+		<script src="script/newsletter.js"></script>
+	</body>
+</html>

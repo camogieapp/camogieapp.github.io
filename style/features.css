@@ -1,0 +1,87 @@
+/* Features page by Tiphaine Pontdeme */
+
+/*W3 Schools, How TO - Collapsibles/Accordion, https://www.w3schools.com/howto/howto_js_accordion.asp, accessed on 20.11.2024 */
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: rgb(16,81,142);
+  color: silver;
+  font-size:20px;
+  font-weight:bold;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid green;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Personal addition - round borders for the first and last sections, plus green horizontal line on the last section */
+#first {
+	border-radius:25px 25px 0 0;
+}
+
+#last {
+	border-radius:0 0 25px 25px;
+}
+
+hr {
+	border-top: 1px solid green;
+}
+
+.accordion:after {
+  content: "Learn more";
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: silver;
+  float: right;
+  margin-left: 5px;
+}
+
+.active2:after {
+  content: '\22BC'; /* Wikipedia, List of Unicode characters, https://en.wikipedia.org/wiki/List_of_Unicode_characters, accessed on 20.11.2024 */
+  color: #444;
+  text-decoration:none;
+  font-size:16px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active2 class with JS), and when you move the mouse over it (hover) */
+.active2, .accordion:hover {
+  background-color: #ccc;
+  color: #444;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.main p {
+	text-align: justify;
+	padding: 0 20px;
+}
+
+.interface, .news{
+	float:left;
+	margin:5px 2%;
+}
+
+.push, .local{
+	float:right;
+	margin:5px 2%;
+}
+
+/* Devices smaller than a tablet */
+@media only screen and (max-width:600px){
+.interface, .push, .news, .local{
+	float:none;
+	display:block;
+	margin: 5px auto;
+}
+	
+}

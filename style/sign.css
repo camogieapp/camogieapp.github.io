@@ -1,0 +1,87 @@
+
+/*All content style constructed by Ross Gibney (x23233681)*/
+.main{
+	min-height:100px;
+	border-radius:25px;/*Rounding Border affect added*/
+	background-color:white;
+	padding-bottom:15px;
+	margin-bottom:15px;/*Add space to bottom of container*/
+	font-family: "Agdasima", sans-serif;
+	display:flex;/*Flexbox for layout styling*/
+	flex-direction:column;/*vertical column layout*/
+	align-items: center;/*center items horizontally within the div*/
+	justify-content: center;/*centers vertically within container*/
+	width:99%;
+	overflow:hidden;/*hide any content extending outside the containers boundary*/
+}
+.column{
+	width:40%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.frequent{
+	position: relative;/*Allows positioning adjustments*/
+	padding-left: 15px;
+	font-family: "Agdasima", sans-serif;
+}
+.faq{
+	font-family:"Agdasima", sans-serif;
+	font-weight:bold;
+	color: black;
+	font-size: 30px;
+	margin: 0;	
+	text-align:center;
+	font-weight:bold;
+	font-size:175%;
+}
+.dropdown{
+	font-size: 150%;
+	font-weight:bold;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	width: 100%;
+	border-radius: 10px;
+	cursor: pointer;/*indicates element is clickable*/
+}
+/*Form Styling*/
+.signup{
+    width:93%;
+    padding:20px;
+	border-radius:10px;
+	box-shadow: 0 4px 8px grey;
+    font-family: "Agdasima", sans-serif;
+	color: black;
+	font-size:150%;
+}
+.contact{
+	font-weight: bold;
+}
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+.repeatError {
+    color: red;
+    font-size: 0.9em;
+	padding-bottom:10px;
+}
+.facebook{
+	padding-top:15px;
+	width:25%;
+	height:auto;
+}
+.apple img{
+	padding-top:15px;
+	width:160px;
+	height:auto;
+}
+#email{
+	width:40%;
+}
+
